@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'client';
   messaggio='che scrivo?';
+  ripetizioni=10;
+
+  aggiornaQuantita(rip: number){
+    this.ripetizioni=rip;
+    this.ripetizioni*=2;
+  }
 }

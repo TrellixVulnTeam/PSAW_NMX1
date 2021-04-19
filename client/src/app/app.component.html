@@ -1,8 +1,8 @@
 <h1>{{ title }} is running!</h1>
 
-<h2>{{messaggio}}</h2>
+<h2>ripetizioni in external component:{{ripetizioni}}</h2>
 Qui inizia il sottocomponente<br/>
-<app-products></app-products>
+<app-products [numeroRipetizioni]=10 (buy)=aggiornaQuantita($event)></app-products>
 qui finisce il sotto componente<br/>
 
 <router-outlet></router-outlet>
